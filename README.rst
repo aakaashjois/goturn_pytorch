@@ -25,7 +25,7 @@ To create a pretrained model,
   
   goturn = Goturn(pretrained="path_to_weights.pkl")
 
-The `weights.pkl` file is located at the root of the repository.
+The :code:`weights.pkl` file is located at the root of the repository.
 
 **Future updates:**
   
