@@ -12,18 +12,14 @@ ________________________________
 **Usage:**
 
 To create the model,
-
-.. code:: python
-  from pytorch_goturn import Goturn
+  ``from pytorch_goturn import Goturn``
   
-  goturn = Goturn()
+  ``goturn = Goturn()``
 
 To create a pretrained model, 
-
-.. code:: python
-  from pytorch_goturn import Goturn
+  ``from pytorch_goturn import Goturn``
   
-  goturn = Goturn(pretrained="path_to_weights.pkl")
+  ``goturn = Goturn(pretrained="path_to_weights.pkl")``
 
 The :code:`weights.pkl` file is located at the root of the repository.
 
