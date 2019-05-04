@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(name='pytorch-goturn',
       version='1.0',
-      description='A port of GOTURN from Caffe to PyTorch',
+      description='A PyTorch port of GOTURN tracker',
       url='https://github.com/aakaashjois/PyTorch-GOTURN',
       classifiers=[
             'Development Status :: 5 - Production/Stable',
@@ -15,5 +15,4 @@ setup(name='pytorch-goturn',
       license='MIT',
       packages=['pytorch_goturn'],
       install_requires=['torch'],
-      include_package_data=True,
       zip_safe=False)

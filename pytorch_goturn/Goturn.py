@@ -4,7 +4,7 @@ from torch import nn
 
 
 class Goturn(nn.Module):
-    def __init__(self, pretrained=True):
+    def __init__(self, pretrained=None):
         super(Goturn, self).__init__()
         self.features_previous = nn.Sequential()
         self.features_previous.add_module('conv11', nn.Conv2d(in_channels=3, out_channels=96, kernel_size=11, stride=4))
@@ -64,9 +64,7 @@ class Goturn(nn.Module):
         self.regressor.add_module('fc8', nn.Linear(in_features=4096, out_features=4))
 
         if pretrained:
-            import os
-            print(os.path.pardir(__file__))
-            model_weights = pickle.load(open('model_weights.pkl', 'rb'))
+            model_weights = pickle.load(open(pretrained, 'rb'))
             for name, module in self.features_previous.named_modules():
                 if name in model_weights.keys():
                     module.weight = nn.Parameter(torch.from_numpy(model_weights[name]['weight']))
