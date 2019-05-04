@@ -12,12 +12,14 @@ ________________________________
 **Usage:**
 
 To create the model,
+
 .. code:: python
   from pytorch_goturn import Goturn
   
   goturn = Goturn()
 
-To create a pretrained model,
+To create a pretrained model, 
+
 .. code:: python
   from pytorch_goturn import Goturn
   
