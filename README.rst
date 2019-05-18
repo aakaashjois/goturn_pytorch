@@ -1,5 +1,5 @@
 ==============
-pytorch_goturn
+goturn_pytorch
 ==============
 A PyTorch port of GOTURN tracker
 ________________________________
@@ -7,19 +7,19 @@ ________________________________
 **Installation:**
 
   1. Download this repository
-  2. navigate to the root of the repository and run :code:`pip install .`
+  2. navigate to the root of the repository and run :code:`pip install goturn_pytorch`
   
 **Usage:**
 
 To create the model,
-  ``from pytorch_goturn import Goturn``
+  ``from GoTurn import Model``
   
-  ``goturn = Goturn()``
+  ``goturn = Model()``
 
 To create a pretrained model, 
-  ``from pytorch_goturn import Goturn``
+  ``from GoTurn import Model``
   
-  ``goturn = Goturn(pretrained="path_to_weights.pkl")``
+  ``goturn = Model(pretrained="path_to_weights.pkl")``
 
 The :code:`weights.pkl` file is located at the root of the repository.
 

@@ -3,9 +3,9 @@ import torch
 from torch import nn
 
 
-class Goturn(nn.Module):
+class Model(nn.Module):
     def __init__(self, pretrained=None):
-        super(Goturn, self).__init__()
+        super(Model, self).__init__()
         self.features_previous = nn.Sequential()
         self.features_previous.add_module('conv11', nn.Conv2d(in_channels=3, out_channels=96, kernel_size=11, stride=4))
         self.features_previous.add_module('relu11', nn.ReLU())
